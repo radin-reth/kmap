@@ -1,4 +1,4 @@
 class KMap.Views.ApplicationView
   render: ->
-    alert("application")
+    # alert("application")
   cleanup: ->

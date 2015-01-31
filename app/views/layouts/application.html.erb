@@ -47,6 +47,19 @@
   </script>
 
   <!-- google map -->
+  <!-- api key: AIzaSyAkIlMIQCEbsg0HUJsymgdyKimkffDXw_I -->
+
+  <!-- GOOGLE TEXT SEARCH -->
+
+  <!-- https://maps.googleapis.com/maps/api/place/textsearch/json?location=-41.319282,174.818717&radius=1000&sensor=true&query=cafe&key=AIzaSyAhaD4HwgofkA2_9Z7fLbGB1V8Shi-S7do
+
+  https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-41.319282,174.818717&radius=1000&sensor=true&type=cafe&key=AIzaSyAhaD4HwgofkA2_9Z7fLbGB1V8Shi-S7do
+
+  https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-41.319282,174.818717&radius=1000&sensor=true&types=cafe&key=AIzaSyAhaD4HwgofkA2_9Z7fLbGB1V8Shi-S7do -->
+
+
+  <!-- Place Search Pagination -->
+  <!-- https://developers.google.com/maps/documentation/javascript/examples/place-search-pagination -->
 
   <script type="text/javascript"
       src="http://maps.google.com/maps/api/js?signed_in=true&sensor=true&libraries=places,adsense,drawing">
@@ -129,7 +142,7 @@
           infowindow = new google.maps.InfoWindow();
           var service = new google.maps.places.PlacesService(map);
           service.nearbySearch(request, callback);
-
+          // service.textSearch(request, callback); GOOGLE TEXT SEARCH NOT IMPLEMENT
         }
 
         function callback(results, status) {
